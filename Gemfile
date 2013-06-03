@@ -1,5 +1,3 @@
-source "http://rubygems.org"
+source 'https://rubygems.org'
 
-group :development do
-  gem 'dashing'
-end
+gem 'dashing'
