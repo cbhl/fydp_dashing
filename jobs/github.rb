@@ -1,8 +1,7 @@
 require 'octokit'
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
-  repos = ["zmanji/ecryptfs", "zmanji/ecryptfs_userspace",
-  "cbhl/fydp_build", "cbhl/fydp_dashing"]
+  repos = ["zmanji/ecryptfs", "zmanji/ecryptfs_userspace"]
 
   commits = repos.map do |repo|
       {
