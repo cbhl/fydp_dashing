@@ -1,7 +1,8 @@
 require 'dashing'
 
 configure do
-  set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :auth_token, 'hWP9oeqsLMnf565xxvCGILxbq8DQOOxZ4wc9qpVc'
+  set :default_dashboard, 'build'
 
   helpers do
     def protected!
