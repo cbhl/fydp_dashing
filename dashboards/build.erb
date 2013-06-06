@@ -14,31 +14,27 @@ $(function() {
       data-text="Unknown"></div>
     </li>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="last-build" data-view="Text" data-title="Last Build"
+      <div data-id="last-build" data-view="Livestamp" data-title="Last Build"
       data-text="Unknown"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="4" data-sizey="4">
+      <div data-id="test-status" data-view="Twolist" data-unordered="true"
+      data-title="Test Status"></div>
     </li>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
       <div data-id="last-commit" data-view="List" data-unordered="true"
-      data-title="Last Commit" data-moreinfo="Last Updated: Unknown"></div>
-    </li>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="4">
-      <div data-id="test-status" data-view="List" data-unordered="false"
-      data-title="Test Status" data-moreinfo="Last Updated: Unknown"></div>
+      data-title="Last Commit"></div>
     </li>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="trigger-build" data-view="Text" data-title="Trigger Build"
-      data-text="<a id='trigger-full-build' href='#full'>Full</a> | <a
-      id='trigger-incremental-build' href='#inc'>Incremental</a>"></div>
+      <div data-id="build-time" data-view="Text" data-title="Build Time"></div>
     </li>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="build-time" data-view="Graph" data-title="Build Time" style="background-color:#ff9618"></div>
+      <div data-id="trigger-build" data-view="Buildtrigger"></div>
     </li>
-    <li data-row="1" data-col="1" data-sizex="3" data-sizey="2">
-      <div data-id="clock" data-view="Clock"></div>
-    </li>
-    <li data-row="1" data-col="1" data-sizex="3" data-sizey="2">
-      <div data-id="status" data-view="Text" data-title="Placeholder"
-      data-text="Lorem Ipsum..."></div>
+    <li data-row="1" data-col="1" data-sizex="4" data-sizey="1">
+      <div data-id="build-log" data-view="Iframe" style="background-color:
+      #ffffff"
+      data-url="http://cryptkeeper-build.rosemary.home.myazuresky.com/"></div>
     </li>
   </ul>
 </div>
