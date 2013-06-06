@@ -17,7 +17,8 @@ SCHEDULER.every '30s', :first_in => 0 do |job|
   end
   last_build = json["last_build"]
   if last_build
-      send_event('last-build', {text: last_build})
+      # TODO(cbhl): properly handle UTC/time-zone shenangians
+      send_event('last-build', {text: last_build + "Z"})
   end
   test_results = json["test_results"]
   if test_results
